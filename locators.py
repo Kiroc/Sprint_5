@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 # Главная страница сайта
-class Locators_Main:
+class LocatorsMain:
     main_form = (By.XPATH, ".//main[@class = 'App_componentContainer__2JC2W']")  # Форма главной страницы сайта
     logo_btn = (By.XPATH, ".//div[@class = 'AppHeader_header__logo__2D0X2']")  # Кнопка главной страницы сайта
     personal_account_btn = (By.XPATH, ".//p[text() = 'Личный Кабинет']")  # Кнопка личного кабинета
@@ -23,7 +23,7 @@ class Locators_Main:
     By.XPATH, "(.//ul[@class = 'BurgerIngredients_ingredients__list__2A-mT'])[3]")  # Выбор начинок на главной странице
 
 # Форма авторизации
-class Locators_Auth:
+class LocatorsAuth:
     auth_form = (By.XPATH, ".//div[@class = 'Auth_login__3hAey']")  # Форма авторизации
     email_input = (By.XPATH, ".//input[@name = 'name']")  # Поле ввода email
     password_input = (By.XPATH, ".//input[@name = 'Пароль']")  # Поле ввода пароля
@@ -36,7 +36,7 @@ class Locators_Auth:
     personal_account_btn = (By.XPATH, ".//p[text() = 'Личный Кабинет']")  # Кнопка личного кабинета
 
 # Форма регистрации
-class Locators_Register:
+class LocatorsRegister:
     name_input = (By.XPATH, "(.//input[@name = 'name'])[1]")  # Поле ввода имени
     email_input = (By.XPATH, "(.//input[@name = 'name'])[2]")  # Поле ввода email
     password_input = (By.XPATH, ".//input[@name = 'Пароль']")  # Поле ввода пароля
@@ -52,7 +52,7 @@ class Locators_Register:
     By.XPATH, ".//p[text() = 'Некорректный пароль']")  # Ошибка при вводе некорректного пароля
 
 # Форма восстановления
-class Locators_Recover:
+class LocatorsRecover:
     recover_btn = (By.XPATH, ".//button[text() = 'Восстановить']")  # Кнопка восстановить
     email_input = (By.XPATH, ".//label[text() = 'Email']")  # Поле ввода email
     login_account_btn = (By.XPATH, ".//a[text() = 'Войти']")  # Кнопка войти
@@ -62,7 +62,7 @@ class Locators_Recover:
     personal_account_btn = (By.XPATH, ".//p[text() = 'Личный Кабинет']")  # Кнопка личного кабинета
 
 #Личный кабинет
-class Locators_Profile:
+class LocatorsProfile:
     profile_form = (By.XPATH, ".//div[@class = 'Account_account__vgk_w']")  # Форма ЛК
     profile_btn = (By.XPATH, ".//a[text() = 'Профиль']")  # Кнопка профиль
     order_history_btn = (By.XPATH, ".//a[text() = 'История заказов']")  # Кнопка история заказов

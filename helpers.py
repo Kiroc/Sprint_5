@@ -2,10 +2,10 @@ import random
 import string
 
 URL_main='https://stellarburgers.nomoreparties.site/'
-URL_reg='https://stellarburgers.nomoreparties.site/register'
-URL_auth = 'https://stellarburgers.nomoreparties.site/login'
-URL_profile = 'https://stellarburgers.nomoreparties.site/account/profile'
-URL_recover='https://stellarburgers.nomoreparties.site/forgot-password'
+URL_reg=URL_main+'register'
+URL_auth = URL_main+'login'
+URL_profile = URL_main+'account/profile'
+URL_recover=URL_main+'forgot-password'
 
 class Reg:
     user_name = f'Kirill'
